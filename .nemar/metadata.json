@@ -1,31 +1,115 @@
 {
   "version": "2.0",
-  "dataset_id": "on004229",
-  "source": "openneuro",
-  "source_id": "ds004229",
+  "pipeline_stage": "enriched",
   "title": "amnoise",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Maria Mittag": {},
-    "Eric Larson": {},
-    "Maggie Clarke": {},
+    "Maria Mittag": {
+      "orcid": "0000-0002-6566-1016",
+      "affiliations": [
+        {
+          "name": "Institute for Learning & Brain Sciences, University of Washington, Seattle, WA 98195-7988, USA"
+        }
+      ]
+    },
+    "Eric Larson": {
+      "orcid": "0000-0003-4782-5360"
+    },
+    "Maggie Clarke": {
+      "orcid": "0000-0001-6198-0864"
+    },
     "Samu Taulu": {},
     "Patricia K. Kuhl": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004229.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1016/j.nicl.2021.102578",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.3390/ijerph19031180",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004229",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004229",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/sdata.2018.110",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "meg"
   ],
-  "datatypes": [
-    "meg"
-  ]
+  "resource_type_specific": "MEG Dataset",
+  "sizes": [
+    "87.6 KB (3 files)"
+  ],
+  "formats": [
+    ".dat",
+    ".fif",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "This dataset contains magnetoencephalography (MEG) recordings from a single infant subject at risk for dyslexia, collected during a linguistic sensitive period for native phoneme learning. The data were acquired to investigate auditory neural deficits and theta oscillatory activity in infants with familial dyslexia risk, with the goal of identifying early neurobiological markers predictive of future language outcomes. The dataset has been converted to BIDS format and represents raw MEG recordings acquired during auditory linguistic tasks.",
+  "methods_description": "MEG data were collected from an infant subject and converted to BIDS format using MNE-BIDS. The dataset represents raw MEG recordings acquired during auditory linguistic tasks.",
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "dyslexia"
+    },
+    {
+      "term": "infants"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "phoneme learning"
+    },
+    {
+      "term": "theta oscillations"
+    },
+    {
+      "term": "language development"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "familial risk"
+    },
+    {
+      "term": "neurodevelopmental disorders"
+    },
+    {
+      "term": "language disorders"
+    }
+  ],
+  "source_hash": "2f9f0b16eacbcc586560d597508b9f189bc86910f768baf99a4fc8a2441507b1"
 }
