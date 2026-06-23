@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "amnoise",
+  "description": "This MEG dataset contains neuroimaging data from a single infant subject collected to investigate auditory processing and language development in children at risk for dyslexia. The data were acquired during a linguistic sensitive period and are used to examine the relationship between early auditory deficits and subsequent language outcomes, with particular focus on theta oscillatory activity during native phoneme learning.",
+  "methods_description": "MEG data were collected from an infant subject and converted to BIDS format using MNE-BIDS. The dataset includes magnetoencephalographic recordings acquired during auditory and linguistic tasks.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,12 +24,30 @@
     "Samu Taulu": {},
     "Patricia K. Kuhl": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004229.v1.0.3",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "dyslexia"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "infant neuroimaging"
+    },
+    {
+      "term": "language development"
+    },
+    {
+      "term": "theta oscillations"
+    },
+    {
+      "term": "phoneme learning"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.nicl.2021.102578",
       "identifier_type": "DOI",
@@ -57,59 +77,28 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004229.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
     "meg"
   ],
-  "resource_type_specific": "MEG Dataset",
   "sizes": [
-    "87.6 KB (3 files)"
+    "1.9 GB (5 files)"
   ],
   "formats": [
     ".dat",
     ".fif",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset contains magnetoencephalography (MEG) recordings from a single infant subject at risk for dyslexia, collected during a linguistic sensitive period for native phoneme learning. The data were acquired to investigate auditory neural deficits and theta oscillatory activity in infants with familial dyslexia risk, with the goal of identifying early neurobiological markers predictive of future language outcomes. The dataset has been converted to BIDS format and represents raw MEG recordings acquired during auditory linguistic tasks.",
-  "methods_description": "MEG data were collected from an infant subject and converted to BIDS format using MNE-BIDS. The dataset represents raw MEG recordings acquired during auditory linguistic tasks.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "dyslexia"
-    },
-    {
-      "term": "infants"
-    },
-    {
-      "term": "auditory processing"
-    },
-    {
-      "term": "phoneme learning"
-    },
-    {
-      "term": "theta oscillations"
-    },
-    {
-      "term": "language development"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "familial risk"
-    },
-    {
-      "term": "neurodevelopmental disorders"
-    },
-    {
-      "term": "language disorders"
-    }
-  ],
-  "source_hash": "2f9f0b16eacbcc586560d597508b9f189bc86910f768baf99a4fc8a2441507b1"
+  "source_hash": "a655e85c070cadbdf58e8c8cad6fd475c1f855424c2d8ce61c77bf8e4dd4e57f"
 }
