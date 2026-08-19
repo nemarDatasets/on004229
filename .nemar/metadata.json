@@ -2,7 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "amnoise",
-  "description": "This MEG dataset contains neuroimaging data from a single infant subject collected to investigate auditory processing and language development in children at risk for dyslexia. The data were acquired during a linguistic sensitive period and are used to examine the relationship between early auditory deficits and subsequent language outcomes, with particular focus on theta oscillatory activity during native phoneme learning.",
+  "description": "This dataset contains magnetoencephalography (MEG) recordings from a single infant subject participating in a study of auditory processing and phoneme learning, part of research investigating risk factors for dyslexia during sensitive periods of language development. The data support investigations into neural theta sampling and auditory deficits in infants at risk for dyslexia.",
   "methods_description": "MEG data were collected from an infant subject and converted to BIDS format using MNE-BIDS. The dataset includes magnetoencephalographic recordings acquired during auditory and linguistic tasks.",
   "license": "CC0",
   "dataset_type": "raw",
@@ -29,19 +29,22 @@
       "term": "MEG"
     },
     {
-      "term": "dyslexia"
+      "term": "infant development"
     },
     {
-      "term": "auditory processing"
+      "term": "Dyslexia",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004410"
     },
     {
-      "term": "infant neuroimaging"
+      "term": "Auditory Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
     },
     {
-      "term": "language development"
-    },
-    {
-      "term": "theta oscillations"
+      "term": "Language Development",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007804"
     },
     {
       "term": "phoneme learning"
@@ -51,7 +54,7 @@
     {
       "identifier": "10.1016/j.nicl.2021.102578",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.3390/ijerph19031180",
@@ -60,11 +63,6 @@
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004229",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004229",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -82,6 +80,11 @@
       "identifier": "10.18112/openneuro.ds004229.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004229",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
